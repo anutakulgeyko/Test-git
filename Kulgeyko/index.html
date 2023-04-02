@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lesson3_Table</title>
+    <style>
+        table{
+            border: 1px solid deeppink;
+            border-spacing: 2px;
+            border-collapse:collapse;
+        }
+        th, td{
+            padding: 10px;
+            border: 1px solid grey;
+        }
+        th{
+            border-color: chocolate;
+            border-left: 0;
+            border-right: 0;
+        }
+        th:first-child{
+            border-left: 1px solid green;
+        }
+        th:last-child{
+            border-right: 1px solid green;
+        }
+    </style>
+</head>
+<body>
+<table align="center" border="2" cellpadding="20" cellspacing="0" width="450">
+    <caption align="bottom">Table 3.2. Demonstration of table title</caption>
+    <thead>
+    <tr>
+        <td colspan="4" bgcolor="#6495ed" align="center">MY FIRST TABLE</td>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td bgcolor="#6495ed" align="center">First cell</td>
+        <td bgcolor="#6495ed" align="center">Second cell</td>
+        <td rowspan="3" colspan="2" bgcolor="yellow">6 cells merged into one</td>
+    </tr>
+    <tr>
+        <td colspan="2" bgcolor="yellow" align="center">2 cells merged into one</td>
+    </tr>
+    <tr>
+        <td bgcolor="yellow" align="center">1st cell 3rd row</td>
+        <td bgcolor="yellow" align="center">2nd cell 3rd row</td>
+    </tr>
+    <tr>
+        <td colspan="4" bgcolor="yellow" align="center">Do you like tables?</td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
